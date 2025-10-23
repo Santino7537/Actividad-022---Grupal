@@ -6,3 +6,7 @@ window.addEventListener('scroll', () => {
     header.style.backgroundColor = '#999';
   }
 });
+
+document.getElementById("alert-btn").addEventListener("click", () => {
+    alert("¡Hola! Has hecho clic en el botón 😄");
+  });
