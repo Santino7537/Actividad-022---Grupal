@@ -151,3 +151,81 @@ body {
     height: 160px;
   }
 }
+
+/* === FOOTER === */
+.site-footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #80deea;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  .main-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  .footer-content p {
+    font-size: 0.8rem;
+  }
+
+  .social-links a {
+    font-size: 0.85rem;
+  }
+}
