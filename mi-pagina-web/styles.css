@@ -72,8 +72,54 @@ body {
 .navbar a:hover::after {
   width: 100%;
 }
+.main-content {
+  padding: 2rem;
+}
 
-/* === RESPONSIVE DESIGN === */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem 1.5rem;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .site-header {
     flex-direction: column;
@@ -86,6 +132,10 @@ body {
     justify-content: center;
     margin-top: 0.5rem;
   }
+
+  .main-content {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -95,5 +145,9 @@ body {
 
   .navbar a {
     font-size: 0.9rem;
+  }
+
+  .card img {
+    height: 160px;
   }
 }
